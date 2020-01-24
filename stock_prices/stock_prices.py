@@ -57,7 +57,7 @@ def find_max_profit(prices):
 
 # find_max_profit([1050, 270, 1540, 3800, 2])
 if __name__ == '__main__':
-            # This is just some code to accept inputs from the command line
+    # This is just some code to accept inputs from the command line
     parser = argparse.ArgumentParser(
         description='Find max profit from prices.')
     parser.add_argument('integers', metavar='N', type=int,
@@ -76,9 +76,11 @@ if __name__ == '__main__':
 # the price we subtract by CAN NOT come after it in the list
 
 """
-[2, 270, 1050, 1540, 3800]
+        i      j
+        V      V 
+[1050, 270, 1540, 3800, 2]
 
-min_price = 2
-
+lowest_price = index[0]
+max_profit = float("-inf")
 
 """
